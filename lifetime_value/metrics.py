@@ -18,7 +18,7 @@ from typing import Sequence
 
 import numpy as np
 import pandas as pd
-from sklearn import metrics
+import sklearn.metrics as sk_metrics
 
 
 def cumulative_true(
@@ -62,11 +62,11 @@ def gini_from_gain(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def _normalized_rmse(y_true, y_pred):
-  return np.sqrt(metrics.mean_squared_error(y_true, y_pred)) / y_true.mean()
+  return np.sqrt(sk_metrics.mean_squared_error(y_true, y_pred)) / y_true.mean()
 
 
 def _normalized_mae(y_true, y_pred):
-  return metrics.mean_absolute_error(y_true, y_pred) / y_true.mean()
+  return sk_metrics.mean_absolute_error(y_true, y_pred) / y_true.mean()
 
 
 def _aggregate_fn(df):
