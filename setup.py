@@ -29,7 +29,7 @@ setup(
     install_requires=[
         'numpy >= 1.11.1',
         'pandas',
-        'sklearn',
+        'scikit-learn',
         'tensorflow',
         'tensorflow-probability',
         'tqdm',

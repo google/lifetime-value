@@ -1,0 +1,5 @@
+.ipynb_checkpoints
+__pycache__
+
+notebooks/kdd_cup_98/tmp/
+notebooks/kaggle_acquire_valued_shoppers_challenge/tmp/
